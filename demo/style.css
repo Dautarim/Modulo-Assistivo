@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root
+{
+    --black: #000000;
+    --black-two: #101010;
+    --black-tre: #AAAAAA;
+
+    --white: #FFFFFF;
+    --white-two: #EFF3FA;
+
+    --blue-one: #333366;
+    --blue-two: #404E82;
+    --blue-tre: #003395;
+    --blue-four: #C8D5EC;
+    --blue-five: #C4D2EB;
+
+    --yellow:#D99C44;
+    --yellow-two:#FFFFE4;
+}
+
+
+
+.tela
+{
+    margin: auto;
+    width: 985px;
+   
+}
+.box
+{
+    width: 100%;
+}
+
+
+.box.one .titulo
+{
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    color: var(--white);
+    
+    background: var(--blue-two);
+    border-bottom: solid 3px var(--yellow);
+    padding-left: 4px;
+}
+.box.one .titulo h3
+{
+    font-size: 15px
+}
+.box.one .titulo P
+{
+    font-size: 13px
+}
+
+.resto
+{
+    height: 48px;
+    background: var(--blue-five);
+}
+/* --------------------------------- */
+
+.box.two
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 10px;
+    font-size: 12px;
+    background: var(--white-two);
+}
+
+.box.two .vermelho
+{
+    color: red;
+    font-weight: bold;
+    
+}
+.box.two .atencao
+{
+    text-align: center;
+    width: 719px
+}
+
+/* --------------------------------- */
+
+.box.tre
+{
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: space-between;
+}
+.litelbox
+{
+    background: var(--white-two);
+    width: 325px;
+    padding: 5px 0px 8px 0px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 12px;
+}
+.litelbox.sel
+{
+    background: var(--yellow-two);
+}
+.litelbox .nome
+{
+    color:var(--blue-tre);
+    font-weight: bold;
+}
+
+/* --------------------------------- */
+
+
+.box.four
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 12px;
+    padding-block: 26px;
+    
+}
+.box.four .action
+{
+    display: flex;
+    gap: 13px;
+}
+
+.box.four .action a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blue-tre);
+}
+
+/* --------------------------------- */
+
+.box.five
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.infonome {
+    width: 492px;
+    clip-path: polygon(0 0, 40% 0, 50% 100%, 0 100%);
+    background: var(--blue-four);
+    padding-left: 60px;
+}
+
+.infonome h3
+{
+  color: var(--blue-one);
+  font-size: 14px;
+}
+
+.logcard
+{
+    width: 492px;
+    padding-block: 5px;
+    border-block: 4px solid var(--blue-four);
+    border-inline: 2px solid var(--blue-four);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+}
+.logcard button
+{
+    font-size: 11px;
+    padding: 2px 7px;
+}
+.logcard .inp
+{
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.logcard .inp input
+{
+    width: 138px;
+    height: 18px;
+    
+}
+.logcard .inp input:focus
+{
+    border: 2px solid;
+    border-radius: 4px;
+}
+.logcard .inp.user 
+{
+    transform: translate(-25px);
+}
+.logcard .inp.senha
+{
+    transform: translate(-21px);
+}
+
+/* --------------------------------- */
+
+
