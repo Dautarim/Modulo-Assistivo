@@ -1,0 +1,86 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root
+{
+    --black: #000000;
+    --black-two: #101010;
+    --black-tre: #AAAAAA;
+
+    --white: #FFFFFF;
+    --white-two: #EFF3FA;
+
+    --blue-one: #333366;
+    --blue-two: #404E82;
+    --blue-tre: #003395;
+    --blue-four: #C8D5EC;
+    --blue-five: #C4D2EB;
+
+    --yellow:#D99C44;
+    --yellow-two:#FFFFE4;
+}
+
+.acessibilidade
+{
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+
+    background: var(--blue-one);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 42px 64px -21px rgba(0,0,0,0.75);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.tela
+{
+    position: relative;
+    margin: auto;
+    max-width: 985px;
+   
+}
+
+.box.one .titulo
+{
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    color: var(--white);
+    
+    background: var(--blue-two);
+    border-bottom: solid 3px var(--yellow);
+    padding-left: 4px;
+}
+.box.one .titulo h3
+{
+    font-size: 15px
+}
+.box.one .titulo P
+{
+    font-size: 13px
+}
+
+.resto
+{
+    height: 48px;
+    background: var(--blue-five);
+}
