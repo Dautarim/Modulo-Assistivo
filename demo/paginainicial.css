@@ -8,17 +8,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: var(--sig);
+    
 }
 
 :root
 {
     --black: #000000;
     --black-two: #101010;
-    --black-tre: #AAAAAA;
+    --black-tre: #222;
+    --black-four: #AAAAAA;
 
     --white: #FFFFFF;
     --white-two: #EFF3FA;
+    --white-tre: #E6ECF7;
 
     --blue-one: #333366;
     --blue-two: #404E82;
@@ -30,6 +33,8 @@
     --yellow-two:#FFFFE4;
 
     --sig: Verdana, sans-serif;
+    --sig2: "Inter", sans-serif;
+
 }
 
 .acessibilidade
@@ -61,7 +66,7 @@
    
 }
 
-.box.one .barradetitulo
+.cabecalho .info-sistema
 {
     display: flex;
     align-items: baseline;
@@ -72,17 +77,18 @@
     border-bottom: solid 3px var(--yellow);
     padding-left: 4px;
 }
-.box.one .barradetitulo #titulo
+.cabecalho .info-sistema #titulo
 {
     display: flex;
     align-items: baseline;
     gap: 10px;
 }
-.box.one .barradetitulo h3
+.cabecalho .info-sistema h3
 {
-    font-size: 15px
+    font-size: 15px;
+    font-family: var(--sig2)
 }
-.box.one .barradetitulo P
+.cabecalho .info-sistema P
 {
     font-size: 13px;
     font-family: var(--sig);
@@ -128,8 +134,88 @@
     padding-right: 10px;
     font-family: var(--sig);
 }
-.painelDoUsuario
+
+/* ------------------------------------------painel-usuario--------------------------------------------- */
+
+.painel-usuario
 {
-    height: 48px;
+    /* height: 48px; */
+    display: flex;
+    justify-content: space-between;
     background: var(--blue-five);
+    min-height: 48px;
 }
+/* ------------------------------------------info-usuario--------------------------------------------- */
+
+#info-usuario
+{
+    padding: 5px 0px 5px 5px;
+    width: 590px;
+}
+
+#usuario
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#usuario #nome-do-usuario
+{
+    font-size: 10.08px;
+    font-weight: bold;
+    width: 400px;
+}
+#usuario #nome-do-usuario span a
+{
+    font-size: smaller;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--blue-tre);
+}
+
+#semestre-do-usuario
+{
+    font-size: 10.08px;
+    padding: 3px 0px 0px;
+}
+#unidade-do-curso
+{
+    font-size: 10.08px;
+    margin-top: 3px;
+    width: 590px;
+}
+
+/* ------------------------------------------menu-usuario--------------------------------------------- */
+
+#menu-usuario
+{
+    width: 360px;
+    padding: 2px 0px;
+}
+#menu-usuario ul
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#menu-usuario ul li
+{
+    list-style: none;
+    margin: 2px 2px;
+    width: 32%;
+    background: var(--white-tre);
+} 
+#menu-usuario ul li a
+{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    font-size: 9.408px;
+    padding: 2px 0px 1px 4px;
+    color: var(--black-tre);
+    font-weight: bold;
+}
+
+/* ------------------------------------------CONTEUDO--------------------------------------------- */
+
+
