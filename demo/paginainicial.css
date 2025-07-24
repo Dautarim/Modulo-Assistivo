@@ -119,6 +119,7 @@
 }
 #sair
 {
+    cursor: pointer;
     font-size: small;
     font-weight: bold;
     background: transparent;
