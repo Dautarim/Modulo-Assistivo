@@ -32,6 +32,8 @@
     --yellow:#D99C44;
     --yellow-two:#FFFFE4;
 
+    --menu-bg:#EFEBDE;
+
     --sig: Verdana, sans-serif;
     --sig2: "Inter", sans-serif;
 
@@ -216,6 +218,69 @@
     font-weight: bold;
 }
 
-/* ------------------------------------------CONTEUDO--------------------------------------------- */
+/* ------------------------------------------portal-docente--------------------------------------------- */
 
 
+/* ------------------------------------------menu-dropdown--------------------------------------------- */
+
+.menu-dropdown #menu
+{
+    display: flex;
+    justify-content: space-around;
+    background: var(--menu-bg);
+}
+.menu-dropdown #menu #menuItem
+{
+    list-style: none;
+    position: relative;
+
+    font-size: 11.2px;
+}
+.menu-dropdown #menu #menuItem #item
+{
+    display: flex;
+    padding: 3px;
+    gap: 2px;
+    align-items: center;
+}
+/* ------------------------------------------submenu--------------------------------------------- */
+
+#submenu
+{
+    position: absolute;
+    left: 0px;
+    top: 22px;
+    background: var(--white);
+    border: 1px solid black;
+    z-index: 10;
+    visibility: hidden;
+}
+#submenu.hide
+{
+    visibility: visible;
+}
+#submenu #submenuItem
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#submenu #submenuItem span
+{
+    padding: 3px;
+}
+#submenu #submenuItem #submenuItemName
+{
+    width: auto;
+    white-space: nowrap;
+    text-align: left;
+    flex: 1;
+}
+#linha
+{
+    width: 92%;
+    float: right;
+    height: 1px;
+    background: #C6C3BD;
+}
