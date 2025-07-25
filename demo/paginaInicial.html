@@ -13,8 +13,9 @@
             <div class="acessibilidade"> 
                 <i class="ph ph-person-arms-spread"></i>
             </div>
-            <div class="box one">
-                <div class="barradetitulo">
+
+            <section class="cabecalho">
+                <div class="info-sistema">
                         <div id="titulo">
                             <h3>UNILAB - SIGAA -</h3>
                             <p>Sistema Integrado de Gestão de Atividades Acadêmicas</p>
@@ -31,10 +32,40 @@
                             <a href="sigaaa.html"><button id="sair">SAIR</button></a>
                         </div>
                 </div>
-                <div class="painelDoUsuario">
 
+                <div class="painel-usuario">
+                    <div id="info-usuario">
+                        <div id="usuario">
+                            <p id="nome-do-usuario"> DAUTARIM OSVALDO C. ANDRELINO <span> <a href="#">Alterar vínculo</a> </span></p>
+                            <p id="semestre-do-usuario">Semestre atual: <strong>2025.2</strong></p>
+                        </div>
+                        <p id="unidade-do-curso"> INSTITUTO DE ENGENHARIAS E DESENVOLVIMENTO SUSTENTÁVEL (10.14) </p>
+                    </div>
+                    <div id="menu-usuario">
+                        <ul>
+
+                            <li id="modulos"> <a href="#"><img src="https://sig.unilab.edu.br/sigaa/img/menu/usuario/modulos.gif" alt=""> Módulos </a></li>
+
+                            <li id="caixa-postal"> <a href="#"><img src="https://sig.unilab.edu.br/shared/img/menu/usuario/mailbox_small.gif" alt=""> Cx. Postal <font color="red" style="font-size:0.7em;">(8)</font> </a></li>
+
+                            <li id="chamado"> <a href="#" onclick="alert('Caro aluno, em caso de dúvidas em relação ao uso do SIGAA, recorra à coordenação do seu curso.\nEm caso de erro, envie uma mensagem para sistemas@unilab.edu.br (não esquecendo de informar seu número de matrícula).');"><img src="https://sig.unilab.edu.br/shared/img/menu/usuario/chamado.gif" alt="">Abrir Chamado</a></li>
+
+                            <li id="menus"> <a href="#"><img src="https://sig.unilab.edu.br/sigaa/img/menu/usuario/menu_unidade.gif" alt=""> Menu Discente</a></li>
+
+                            <li id="dados-pessoais"> <a href="#" onclick="window.open('/sigaa/alterar_dados.jsf','','width=670,height=430, top=100, left=100, scrollbars' )"><img src="https://sig.unilab.edu.br/shared/img/menu/usuario/pessoal.gif" alt=""> Alterar senha</a></li>
+
+                            <li id="ajuda"> <a href="#" target="_blank"><img src="https://sig.unilab.edu.br/sigaa/img/menu/usuario/small_ajuda.gif" alt=""> Ajuda </a></li> 
+
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="portal-docente">
+                <div id="menu-dropdown"></div>
+                <div id="perfil-docente"></div>
+                <div id="main-docente"></div>
+            </section>
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
