@@ -235,6 +235,13 @@
     position: relative;
 
     font-size: 11.2px;
+    transition: .3s ease;
+}
+
+.menu-dropdown #menu #menuItem #submenu #submenuItem:hover,
+.menu-dropdown #menu #menuItem:hover
+{
+    background: #C6D3EF;
 }
 .menu-dropdown #menu #menuItem #item
 {
@@ -263,12 +270,13 @@
 {
     list-style: none;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 #submenu #submenuItem span
 {
-    padding: 3px;
+    padding: 0px 3px;
 }
 #submenu #submenuItem #submenuItemName
 {
@@ -276,6 +284,10 @@
     white-space: nowrap;
     text-align: left;
     flex: 1;
+}
+#submenuItemIcon
+{
+    background: var(--menu-bg);
 }
 #linha
 {
