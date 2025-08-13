@@ -257,11 +257,13 @@
     position: absolute;
     left: 0px;
     top: 22px;
+   
     background: var(--white);
     border: 1px solid black;
     z-index: 10;
     visibility: hidden;
 }
+
 #submenu.hide
 {
     visibility: visible;
